@@ -1,0 +1,10 @@
+{
+  "products/": {
+   "product": [
+     {
+       "id": "{{$route.params.id}}"
+      
+     }
+   ]
+  }
+}
