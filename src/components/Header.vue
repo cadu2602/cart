@@ -17,16 +17,16 @@
 
 <template>
   <div class="">
-    <div class="main" style="w-full ">
+    <div class="main" >
       <q-tabs
         class="bg-pink-12 text-white shadow-2"
-      > produtos
+      >  Produtos
       </q-tabs>
     </div>
-    <div class="cart" style="w-full ">
+    <div class="cart" >
       <q-tabs
         class="bg-blue-12 text-white shadow-2"
-      > carrinho
+      > Carrinho
       </q-tabs>
     </div>
   </div>
@@ -35,15 +35,17 @@
 
 <style scoped>
 .main {
-  width: 50%;
-  height: 100%;
-  
+  width: 45%;
+  padding: 5px;
+  font-size: 20px;
 }
 .cart {
-  margin-left: 50%;
-  margin-top: -21px;
-  width: 50%;
-  height: 100%;
+  margin-left: 45%;
+  margin-top: -40px;
+  padding: 5px;
+  width: 55%;
+  font-size: 20px;
+
 
 }
 </style>

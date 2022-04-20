@@ -37,13 +37,13 @@ import HeaderRocket from '@/components/Header.vue'
   <header-rocket   />
   <div class="geral">
     <div id="card" @click="buy" >
-      estoque: {{relogio.length}}
+      Estoque: {{relogio.length}}
     </div>
     <div id="cart" @click="refund"> 
-      quantidade no carrinho: {{carrinho.length}}
+      Quantidade no carrinho: {{carrinho.length}}
     </div>
     <div id="total"   >
-      total: {{soma}}
+      Total: {{soma}}
     </div>
   </div>
 </template>
@@ -53,19 +53,20 @@ import HeaderRocket from '@/components/Header.vue'
   padding: 5px;
   display: flex;
   justify-content: center;
+  font-size: 30px;
 }
 #card {
   width: 10%;
-  border: 5px solid red;
+  border: 5px solid yellow;
 }
 #cart {
-  width: 15%;
-  margin-left: 15%;
+  width: 25%;
+  margin-left: 25%;
   border: 5px solid purple;
 }
 #total {
   width: 10%;
-  border: 5px solid blue;
+  border: 5px solid aqua;
 }
 
 </style>
