@@ -36,11 +36,13 @@ import HeaderRocket from '@/components/Header.vue'
 <template>
   <header-rocket   />
   <div class="geral">
-    <div id="card" @click="buy" >
+    <div id="card"  >
       Estoque: {{relogio.length}}
+      <q-btn color="yellow-9" label="Adicionar" @click="buy"/>
     </div>
-    <div id="cart" @click="refund"> 
+    <div id="cart" > 
       Quantidade no carrinho: {{carrinho.length}}
+      <q-btn class="btn" color="purple-10" label="Remover" @click="refund"/>
     </div>
     <div id="total"   >
       Total: {{soma}}
@@ -60,7 +62,7 @@ import HeaderRocket from '@/components/Header.vue'
   border: 5px solid yellow;
 }
 #cart {
-  width: 25%;
+  width: 20%;
   margin-left: 25%;
   border: 5px solid purple;
 }
@@ -68,5 +70,4 @@ import HeaderRocket from '@/components/Header.vue'
   width: 10%;
   border: 5px solid aqua;
 }
-
 </style>
